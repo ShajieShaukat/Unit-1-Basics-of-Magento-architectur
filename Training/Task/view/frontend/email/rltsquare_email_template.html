@@ -1,0 +1,25 @@
+<!--@subject {{trans "Did you forget something?"}} @-->
+{{template config_path="design/email/header_template"}}
+<table style="float:left; margin-right: 10px" class="fue-abc-items">
+    <tr>
+        <td>
+            <div class="greeting">Hi {{var customerName}},</div>
+            <div>
+                {{trans "I’m from %store_name. " store_name=$store.getFrontendName()}},
+                {{trans "you haven’t forgotten us as well. "}}
+                {{trans "Thus, we would love to be sure that we will catch your attention again."}}
+                {{trans "Or if anything got you confused in throughout the process?"}}
+                {{trans "Feel free to contact again to discuss problems you may have."}}
+                {{trans "Your satisfaction is our first priority."}}
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div>
+                {{trans "Looking forward to seeing you around!"}}
+            </div>
+        </td>
+    </tr>
+</table>
+{{template config_path="design/email/footer_template"}}
